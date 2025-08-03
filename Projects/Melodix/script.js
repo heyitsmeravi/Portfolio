@@ -6,7 +6,7 @@ let nxtBtn=document.querySelector(".nxtBtn");
 let songIndex=0;
 let songs=[
     {
-songName:"Let me love you", songPath:"asset/1.mp3", songCover:"asset/1.png"
+songName:"Baby", songPath:"asset/1.mp3", songCover:"asset/1.png"
 },{
     songName:"Attention", songPath:"asset/2.mp3", songCover:"asset/2.png"
 },
