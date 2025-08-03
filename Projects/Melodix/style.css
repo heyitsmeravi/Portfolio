@@ -1,0 +1,495 @@
+body{
+    overflow: hidden;
+    padding:0;
+    margin:0;
+    font-family: montserrat;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+.main-content{
+    background-color: black;
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.sidebar{
+    width: 22%;
+    height: 100%;
+    background-color:#121212;
+    margin:0.75rem;
+    border-radius: 1rem;
+    /* display: flex; */
+}
+.content{
+    flex:1;
+    background-color:#121212;
+    margin:0.75rem 0rem;
+    border-radius: 1rem;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    
+}
+.content h2{
+    margin-left:5rem;
+}
+.extinfo{
+    right:0;
+    width:22%;
+    height: 100vh;
+    background-color:#121212;
+    border-radius: 1rem;
+    margin:0.75rem;
+    color:white;
+    overflow:auto;
+}
+.topbar{
+    background-color: black;
+    width:100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+.musicbar{
+    background-color:black;
+    bottom: 0;
+    position: fixed;
+    height: 6.25rem;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin-top:0.50rem;
+    margin-left:0.80rem;
+    color:white;
+    /* line-height: 3rem; */
+    font-size: 1.75rem;
+}
+#logo{
+    margin-top: 1rem;
+    width:140px;
+}
+.nav{
+    display: flex;
+    flex:1;
+    color:white;
+    margin-left:22rem;
+    margin-top: 1rem;
+}
+.navopt{
+    display: flex;
+    margin-left:1rem;
+    /* font-size: 1.15rem; */
+    align-items: center;
+}
+.navgopt{
+    background-color: #232323;
+    line-height: 2rem;
+    border-radius: 1.75rem;
+    padding: 0.75rem;
+    font-size: 1.15rem;
+    display: flex;
+    opacity: 0.7;
+}
+.navgopt:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.sidenav{
+    margin-left:2rem;
+}
+.searchbox{
+    margin-left:0.25rem;
+    width:21rem;
+    height: 1.15rem;
+    font-size:1.25rem;
+    background-color:transparent;
+    color:white;
+    outline: none;
+    border: none;
+    border-right: 1px solid white;
+}
+.badge{
+    height:2.5rem;
+    font-weight: 700;
+    border-radius: 1.25rem;
+    font-size: 0.9rem;
+    padding:0.25rem 1rem;
+    width:fit-content;
+    border: none;
+    margin:0 0.25rem;
+    
+}
+.badge:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+}
+.darkbadge{
+    background-color:black;
+    color:white;
+    margin:0 1rem;
+    opacity: 0.60;  
+}
+.darkbadge:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.big{
+    font-size: 1.10rem;
+    padding:0 0.25rem;
+}
+.sidetopopt{
+    display: flex;
+    color:white;
+    font-weight: 700;
+}
+.option{
+    height: 2rem;
+    background-color:#232323;
+    margin:0.5rem 1rem;
+    border-radius: 1rem;
+    line-height: 2rem;
+    padding:0.25rem 0.65rem;
+    width: fit-content;
+}
+.option:hover{
+    background-color: #343434;
+}
+.sidemidopt{
+    display: flex;
+    justify-content: space-between;
+}
+.artistbars{
+    color:white;
+    margin:0.25rem 0.5rem;
+}
+.bars{
+    display: flex;
+    gap:0rem;
+    display: flex;
+    padding:0.25rem 0.75rem;
+    border-radius: 1rem;
+    margin:0 0rem;
+    width:90%;
+}
+.artistdata{
+    margin:0 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.artistbars h3,h6{
+    margin: 0;
+    font-weight: 500;
+}
+.artistimage{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+}
+.bars:hover{
+    background-color: #343434;
+}
+.songname{
+    font-size: 1.5rem;
+    margin:1rem 0;
+}
+.songimage img{ 
+    width:19rem;
+}
+.songdetail{
+    display: flex;
+    align-items: center;
+}
+.songdetail h1,h3{
+    margin: 0;
+}
+.songdetail h3{
+    margin:0;
+}
+h1:hover,h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.songdetailbox{
+    width:90%;
+}
+.extrainfocontainer{
+    margin:1rem 1.8rem;
+}
+.singerdetails{
+    padding-bottom: 10rem;
+}
+.songshare{
+    display: flex;
+    color:white;
+    text-align: end;
+    width: fit-content;
+}
+.songshare span{
+    padding:0 0 0 0.5rem;
+    opacity: 0.6;
+}
+.songshare span:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.singerdetails{
+    margin-top: 1rem;
+}
+.hidden{
+    display:none;
+}
+.extinfo:hover .hidden{
+display: block;
+}
+.musiccontrols{
+    width:50%;
+}
+.currplay{
+    display: flex;
+    align-items: center;
+    width:25%;
+    padding:0.5rem;
+    color:white;
+}
+.extracontrols{
+    width:25%;
+    color:white;
+    display: flex;
+    justify-content: space-evenly;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playbar{
+    color:white;
+    margin:0 2rem; 
+    display: flex;
+    display: flex;
+    justify-content: center;
+}
+.currplay img{
+    width:3.5rem;
+}
+.currbox{
+    margin: 0 0.75rem;
+    padding: 0;
+}
+.currbox h3:hover,.currbox span:hover{
+cursor: pointer;
+}
+.currbox span a, .songdetailbox span a{
+    opacity: 0.6;
+    text-decoration: none;
+    color:white;
+}
+.currbox span:hover,.currbox span a:hover,.songdetailbox span a:hover{
+    opacity: 1;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.controls-icon,.curricon {
+    opacity: 0.6;
+    margin-right:1rem ;
+    height:1rem;
+}
+.masterPlay{
+    position: relative;
+    margin-right:1rem;
+}
+.controls-icon:hover,.curricon:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.controls .controls-icon{
+    width: 1rem;
+}
+.progress-bar{
+    width:70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    height:0.2rem;
+    background-color:white;
+    border-radius: 1rem;
+    box-shadow: white;
+}
+.progress-bar::-webkit-slider-thumb{
+    height: 1rem;
+    width:1rem;
+    border-radius: 50%;
+    bottom:0.35rem;
+    appearance: none;
+    position: relative;
+    background-color:green;
+}
+.volume{
+    display: flex;
+    align-items: end;
+    margin-right: 1rem;
+}
+.volume .controls-icon{
+    margin-right: 0.70rem;
+}
+.volumebar{
+    appearance: none;
+    margin-left: 0;
+    width:5.75rem;
+    border-radius: 50%;
+    outline: none;
+}
+.volumebar::-webkit-slider-runnable-track{
+    background-color: rgb(255, 255, 255);
+    height: 0.2rem;
+}
+.volumebar::-webkit-slider-thumb{
+    background-color:green;
+    height: 0.9rem;
+    width:0.9rem;
+    border-radius: 50%;
+    appearance: none;
+    bottom:5px;
+    position: relative;
+    display: none;
+}
+.volume:hover{
+    .volumebar::-webkit-slider-thumb{
+        display: block;
+        cursor: pointer;
+    }
+    .controls-icon{
+        opacity: 1;
+    }
+}
+
+/* song card */
+.card{
+    width:10rem;
+    border-radius: 0.5rem;
+    padding:1rem; 
+    margin:1rem;
+}
+.card:hover{
+    background-color: #232323;
+    cursor:pointer;
+
+}
+.cards-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-img{
+    width:100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+
+/* footer */
+
+.footer{
+    height: 300px;
+    align-items: center;
+    justify-content: center ;
+    display: flex;
+}
+.line{
+    width:90%;
+    height: 50%;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+.line .copyright{
+    margin-top:2.5rem;
+    opacity:1;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .main-content {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        height: auto;
+    }
+
+    .sidebar, .extinfo, .topbar {
+        display: none !important;
+    }
+
+    .content {
+        flex: 1;
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+        overflow-y: auto;
+        background-color: #121212;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 1rem;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+        padding: 0.5rem;
+        margin: 0;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .musicbar {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 0.75rem 1rem;
+        gap: 0.5rem;
+        position: fixed;
+        bottom: 0;
+        z-index: 999;
+    }
+
+    .currplay, .musiccontrols, .extracontrols {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .currplay img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .progress-bar, .volumebar {
+        width: 100%;
+        max-width: 100%;
+    }
+}
