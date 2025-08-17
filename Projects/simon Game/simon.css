@@ -1,0 +1,32 @@
+#heading,#level{
+	text-align:center;
+}
+.container{
+	display:flex;
+	justify-content:center;
+
+}
+.box{
+	margin:2.4rem; 
+	height:200px;
+	width:200px;
+	border:10px solid black;
+	text-align:center;
+	border-radius:2rem;
+	cursor:pointer;
+}
+.first{
+	background-color:#f99b45;
+}
+.second{
+	background-color:#d95980;
+}
+.third{
+	background-color:#819ff9;
+}
+.fourth{
+	background-color:#63aac0;
+}
+.flash{
+	background-color:white;
+}
